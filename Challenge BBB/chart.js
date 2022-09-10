@@ -107,7 +107,7 @@ function init() {
             marker: {
               color: individualOtuIds,
               size:individualSampleValues,
-              colorscale: "Picnic"              
+              colorscale: "Spectral"              
               },
             text: individualOtuLabels 
             };
@@ -162,16 +162,17 @@ function init() {
 		        mode: "gauge+number",
             gauge: {
               axis: {range: [null, 10], tickwidth: 1, tickcolor:'black' },
-              bar: {color:"black"},
+              bar: {color:"red"},
               bgcolor:"white",
               borderwidth:2,
               bordercolor: "black",
+              
               steps:[
-                {range: [0,2],color:"cyan"},
-                {range: [2,4],color:"deepskyblue"},
-                {range: [4,6],color:"royalblue"},
-                {range: [6,8],color:"mediumblue"},
-                {range: [8,10],color:"midnightblue"},
+                {range: [0,2],color:"linear-gradient(red, yellow)"},
+                {range: [2,4],color:"peachpuff"},
+                {range: [4,6],color:"indianred"},
+                {range: [8,10],color:"mediumseagreen"},
+                {range: [6,8],color:"lightsteelblue"},
                 ]
               }
             }];
@@ -184,7 +185,7 @@ function init() {
             font: {
               family: 'font-family: Arial, Helvetica Neue, Helvetica, sans-serif',
               size: 14,
-              color: '#191970'
+              color: '#FF4500'
               }
           };
 
